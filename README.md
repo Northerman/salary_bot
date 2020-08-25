@@ -1,9 +1,9 @@
 # Salary Prediction Chatbot: Project Overview
-* Scraped around 10,000 job postings from jobsdb using python and BeautifulSoup.  (ADD JUPYTERNOTEBOOK)
-* Perform multiple text data cleaning such as salary & working experience extraction from text using regex. (ADD JUPYTERNOTEBOOK)
-* Perform exploratory data analysis to gain insights for jobs using plotly & seaborn
+* Scraped around 10,000 job postings from jobsdb using python and BeautifulSoup. :  [Data Scraping Notebook](https://github.com/Northerman/salary_chatbot/blob/master/Data%20Scraping/Job%20Scraping.ipynb)
+* Perform multiple text data cleaning such as salary & working experience extraction from text using regex. 
+* Perform exploratory data analysis to gain insights for jobs using plotly & seaborn. : [Data Cleaning & EDA Notebook](https://github.com/Northerman/salary_chatbot/blob/master/Data%20Scraping/EDA%20jobs.ipynb)
 * Create a tree-based model to predict job salary given experience year & job function.
-* Built two salary prediction chatbot & models (1.Using local database 2.Using Firebase)
+* Built two salary prediction chatbot & models. (1.Using local database 2.Using Firebase)
 * Built a flask API endpoint hosted locally and use ngrok to communicate with dialogflow to identify user’s intent.
 
 # Code and Resources Used
