@@ -90,6 +90,7 @@ def get_bot_response():
 
     ## Return python chatbot response if keyword doesn't match
     else:
+        # chatbot = ChatBot('Northerman',trainer = 'chatterbot.corpus.english') #added line
         return str(chatbot.get_response(userText))
 
 ########################## DialogFlow Section ################################
