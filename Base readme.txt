@@ -1,3 +1,6 @@
+##Run app
+
+
 ## Create database and load csv data into database
 cd ไปที่ my_app_folder
 run python

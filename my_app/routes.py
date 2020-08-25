@@ -2,12 +2,10 @@ from my_app import app, db
 from my_app.models import Profile
 from flask import Flask, render_template, request, redirect, url_for, make_response
 from my_app.chatbot import chatbot
-import webbrowser
 import pickle
 import numpy as np
 import json
 import pandas as pd
-from collections import OrderedDict
 
 
 #Model trained on local data
