@@ -1,11 +1,11 @@
 # Salary Prediction Chatbot: Project Overview
-* Scraped around 10,000 job postings from jobsdb using python and BeautifulSoup. :  [Data Scraping Notebook](https://github.com/Northerman/salary_chatbot/blob/master/Data%20Scraping/Job%20Scraping.ipynb)
+* Scraped around 10,000 job postings from jobsdb using python and BeautifulSoup. :  [Data Scraping Notebook](https://colab.research.google.com/drive/1CxPKttPc71m3fAs-ZbRyHzjzmzwEeQ-_?usp=sharing)
 * Perform multiple text data cleaning such as salary & working experience extraction from text using regex. 
-* Perform exploratory data analysis to gain insights for jobs using plotly & seaborn. : [Data Cleaning & EDA Notebook](https://github.com/Northerman/salary_chatbot/blob/master/Data%20Scraping/EDA%20jobs.ipynb)
+* Perform exploratory data analysis to gain insights for jobs using plotly & seaborn. : [Data Cleaning & EDA Notebook](https://colab.research.google.com/drive/1Ipjt0Be_ZJM1BhYPNchVwGvKjPOqco4V?usp=sharing)
 * Create a tree-based model to predict job salary given experience year & job function.
 * Built two salary prediction chatbot & models. (1.Using local database 2.Using Firebase)
 * Built a flask API endpoint hosted locally and use ngrok to communicate with dialogflow to identify user’s intent.
-
+![](/images/chatbot_flow.png)
 # Code and Resources Used
 **Base requirements:** requirements.txt
 
@@ -20,19 +20,48 @@
 **Python Chatbot Tutorial:** https://www.youtube.com/watch?v=UVKSrj7cxak (By Professional Cipher)
 
 
-# Project Details
-asdf
+# Webpage Structure
+The webpage contain 2 chatbots, one from python and the other from dialogflow. The python chatbot contains training data from jobsdb while dialogflow chatbot training data comes from user input. Pictures below show what can the chatbot do!
+
+**Idle Chat & Salary Prediction**
+
+**Showing Data**
+
+
+**Insert Data**
+
+
+# Web Scraping
+Wrote a jupyter notebook scraping data from jobsdb using BeautifulSoup. For each job posting we got the following data: 
+* Job Title	
+* Job Category
+* Career Level	
+* Years of Experience
+* Salary
+* Employment type
+* Job Responsibility
+* Job Qualifications
+* Job Description
 
 
 
-# Data Scraping
+
+# Data Cleaning
+
 adsf
 
 
-
-# Exploratory Data Analysis & Data Cleaning
+# Exploratory Data Analysis
 adsf
 
+# Modelling
+* The purpose of this project is to understand the data science project pipeline, and thus modelling is not emphasized in this particular project.
+* Two model has been created based on 2 data location one in local databaase and the other in firebase. The local database contains data scraped from jobsdb and the firebase database contains user input data inserted through dialogflow chatbot.
+* A simple decision tree model is used to train on the whole dataset and the categorical feature (job function) is label encoded.
+ 
+# Model Deployment
+* After the model is trained it is pickle saved into a .pkl file which will be loaded when running flask endpoint hosted locally.
+* Used ngrok to deploy the web online so that it can communicate with dialogflow through webhook.
+* The chatbot can idle chat/insert data/show data/predict salary based on user's intent.
+* Why 2 chatbots? : So that I could connect to 2 database types (SQL & NOSQL) for practicing purposes.
 
-#Model Deployment
-asdf
