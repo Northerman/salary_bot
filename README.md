@@ -24,12 +24,14 @@
 The webpage contain 2 chatbots, one from python and the other from dialogflow. The python chatbot contains training data from jobsdb while dialogflow chatbot training data comes from user input. Pictures below show what can the chatbot do!
 
 **Idle Chat & Salary Prediction**
+![](/images/idle_chat.png)
+
 
 **Showing Data**
-
+![](/images/show_data.png)
 
 **Insert Data**
-
+![](/images/insert_data.png)
 
 # Web Scraping
 Wrote a jupyter notebook scraping data from jobsdb using BeautifulSoup. For each job posting we got the following data: 
