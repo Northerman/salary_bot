@@ -54,7 +54,13 @@ adsf
 
 
 # Exploratory Data Analysis
-adsf
+Here are some of the highlights of the EDA notebook
+![](/images/pie_chart.png)  
+![](/images/wordcloud.png)  
+![](/images/salary_experience.png) 
+![](/images/salary_jobfunction.png)
+
+
 
 # Modelling
 * The purpose of this project is to understand the data science project pipeline, and thus modelling is not emphasized in this particular project.
