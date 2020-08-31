@@ -50,7 +50,7 @@ Wrote a jupyter notebook scraping data from jobsdb using BeautifulSoup. For each
 
 # Data Cleaning [Data Cleaning & EDA Notebook](https://colab.research.google.com/drive/1Ipjt0Be_ZJM1BhYPNchVwGvKjPOqco4V?usp=sharing)
 * Using regex to extract salary & expereince year from text (e.g. THB70,000 - 120,000 /month --> min salary = 70,000 & max salary = 120,000)
-* Using multiple preprocessing steps to extract salary from job description or job title (more details on the extraction method can be found in the notebook)
+* Using multiple preprocessing steps to extract salary from job description or job title (more details on the extraction method can be found in the notebook [Data Cleaning & EDA Notebook](https://colab.research.google.com/drive/1Ipjt0Be_ZJM1BhYPNchVwGvKjPOqco4V?usp=sharing))
 * Clean redundant data e.g. (Middle, Middle Level) = Middle Level
 * Fill missing experience year by grouped by career level
 * and more!
